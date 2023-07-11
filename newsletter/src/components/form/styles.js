@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const MainDivForm = styled.div`
+  @media (max-width: 480px) {
+    width: 100%;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +14,7 @@ export const MainDivForm = styled.div`
 `;
 
 export const StyledForm = styled.form`
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,16 +26,18 @@ export const StyledForm = styled.form`
     border: solid 2px var(--color-grey);
     border-radius: 8px;
     height: 55px;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     padding-left: 25px;
     font-size: 15px;
   }
-  
+
   button {
     border: solid 1px var(--color-charcoal-grey);
     border-radius: 8px;
     height: 55px;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     font-weight: 500;
     font-size: 16px;
     color: var(--color-white);
@@ -41,16 +47,22 @@ export const StyledForm = styled.form`
       border: solid 1px var(--color-white);
     }
   }
+  @media(max-width: 380px){
+
+button{
+  font-size: 12px;
+
+}
+}
 `;
 
 export const StyledErrorDiv = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 55px;
-    
-    span{
-      font-size:12px;
-      color: var(--color-primary);
-    }
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 55px;
 
-`
+  span {
+    font-size: 12px;
+    color: var(--color-primary);
+  }
+`;

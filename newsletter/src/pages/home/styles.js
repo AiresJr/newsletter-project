@@ -15,15 +15,30 @@ export const StyledMainDiv = styled.main`
     color: var(--color-slate-grey);
   }
   h1 {
-    font-size: 55px;
+    font-size: 3.44rem;
   }
   span {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
+  }
+  @media (max-width: 430px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+    span {
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
   }
 `;
 
 export const StyledDiv = styled.div`
+  @media (max-width: 930px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   display: flex;
   align-items: center;
   width: 100%;
@@ -33,6 +48,9 @@ export const StyledDiv = styled.div`
   background-color: var(--color-white);
 `;
 export const LeftDiv = styled.div`
+  @media (max-width: 930px) {
+    height: 560px;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +61,8 @@ export const LeftDiv = styled.div`
 
 export const StyledUl = styled.ul`
   display: flex;
-  gap: 15px;
+  width: 100%;
+  gap: 0.94rem;
   flex-direction: column;
 `;
 
@@ -52,4 +71,13 @@ export const StyledLi = styled.li`
   flex-direction: row;
   align-items: center;
   gap: 20px;
+`;
+
+export const StyledImg = styled.div`
+  @media (max-width: 480px) {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
 `;

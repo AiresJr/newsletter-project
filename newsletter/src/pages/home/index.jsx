@@ -1,7 +1,7 @@
 import Icon from "../../assets/icon-list.svg";
 import Illustration from "../../assets/illustration-desktop.svg";
 import { HomeForm } from "../../components/form";
-import { LeftDiv, StyledDiv, StyledLi, StyledMainDiv, StyledUl } from "./styles";
+import { LeftDiv, StyledDiv, StyledImg, StyledLi, StyledMainDiv, StyledUl } from "./styles";
 
 export const HomePage = () => {
   return (
@@ -29,9 +29,9 @@ export const HomePage = () => {
             </StyledUl>
             <HomeForm />
           </LeftDiv>
-          <div>
+          <StyledImg>
             <img src={Illustration} alt="illustration" />
-          </div>
+          </StyledImg>
         </StyledDiv>
       </StyledMainDiv>
     </>

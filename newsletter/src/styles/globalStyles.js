@@ -28,6 +28,10 @@ button, a{
 body{
    
     background-color: var(--color-slate-grey);
- 
+    
+    @media (max-width: 930px) {
+    background-color: var(--color-white);
+  
+  }
 }
 `;
